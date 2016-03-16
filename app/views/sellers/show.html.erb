@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @seller.name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @seller.last_name %>
+</p>
+
+<p>
+  <strong>Comission percent:</strong>
+  <%= @seller.comission_percent %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @seller.status %>
+</p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @seller.username %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @seller.password %>
+</p>
+
+<%= link_to 'Edit', edit_seller_path(@seller) %> |
+<%= link_to 'Back', sellers_path %>

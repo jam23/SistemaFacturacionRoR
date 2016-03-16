@@ -1,0 +1,51 @@
+#==========================================================
+# => GENERATE
+#==========================================================
+
+#1. Category
+rails generate scaffold Category description:string status:bit 
+
+#2. Articulo
+rails generate scaffold Article category:references description:string unit_price:decimal status:bit 
+
+#3. Cliente
+rails generate scaffold Client name:string trademark:string identification:string account_number:integer telephone:string status:bit 
+
+#4. Vendedor
+rails generate scaffold Seller name:string last_name:string comission_percent:integer status:bit username:string password:string 
+
+#5. AsientoContable
+rails generate scaffold Entry description:string client:references account_number:integer movement_type:string amount:decimal status:bit 
+
+#6. FacturaCabecera
+rails generate scaffold InvoiceHeader seller:references client:references comment:string 
+
+#7. FacturaDetalle
+rails generate scaffold InvoiceLine invoice_header:references article:references quantity:integer unit_price:decimal 
+
+
+#==========================================================
+# => DESTROY
+#==========================================================
+
+#1. Category
+rails destroy scaffold Category description:string status:bit 
+
+#2. Articulo
+rails destroy scaffold Article category:references description:string unit_price:decimal status:bit 
+
+#3. Cliente
+rails destroy scaffold Client name:string trademark:string identification:string account_number:integer telephone:string status:bit 
+
+#4. Vendedor
+rails destroy scaffold Seller name:string last_name:string comission_percent:integer status:bit username:string password:string 
+
+#5. AsientoContable
+rails destroy scaffold Entry description:string client:references account_number:integer movement_type:string amount:decimal status:bit 
+
+#6. FacturaCabecera
+rails destroy scaffold InvoiceHeader seller:references client:references comment:string 
+
+#7. FacturaDetalle
+rails destroy scaffold InvoiceLine invoice_header:references article:references quantity:integer unit_price:decimal 
+

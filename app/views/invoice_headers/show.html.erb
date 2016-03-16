@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Seller:</strong>
+  <%= @invoice_header.seller %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @invoice_header.client %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @invoice_header.comment %>
+</p>
+
+<%= link_to 'Edit', edit_invoice_header_path(@invoice_header) %> |
+<%= link_to 'Back', invoice_headers_path %>

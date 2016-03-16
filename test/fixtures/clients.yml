@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  trademark: MyString
+  identification: MyString
+  account_number: 1
+  telephone: MyString
+  status: 
+
+two:
+  name: MyString
+  trademark: MyString
+  identification: MyString
+  account_number: 1
+  telephone: MyString
+  status: 
